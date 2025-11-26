@@ -22,7 +22,7 @@ async function connectDB() {
 connectDB();
 
 const userSchema = new Schema({
-  username: { type: String, requerid: true }
+  username: { type: String, required: true }
 });
 let userModel = mongoose.model('user', userSchema);
 
